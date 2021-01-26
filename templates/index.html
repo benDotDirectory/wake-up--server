@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    Servers:<br>
+    {% for s in servers %}
+        {{ s["hostname"] }}
+    {% endfor %}
+{% endblock %}
